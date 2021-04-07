@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.easen.idverify">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.flash"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivationActivity" />
+        <activity android:name=".AddGroupActivity" />
+        <activity android:name=".DeleteGroupActivity" />
+        <activity android:name=".EnrollActivity" />
+        <activity android:name=".IdentifyActivity" />
+        <activity android:name=".VerifyActivity" />
+        <activity android:name=".DetectFaceActivity" />
+        <activity android:name=".DetectMultiFaceActivity" />
+        <activity android:name=".DetectFaceWithQuality" />
+        <activity android:name=".GetPersonCountActivity" />
+        <activity android:name=".GetGroupIDsActivity" />
+        <activity android:name=".GetPersonIDsActivity" />
+        <activity android:name=".GetPersonFeatsActivity" />
+        <activity android:name=".EnrollFromFeatsActivity" />
+        <activity android:name=".GetFeatCountActivity" />
+        <activity android:name=".DeletePersonActivity" />
+        <activity android:name=".GetFeatureActivity"></activity>
+        <activity android:name="qrcode.QrCodeActivity"></activity>
+            </application>
+
+</manifest>
